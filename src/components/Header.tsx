@@ -44,7 +44,7 @@ export function Header() {
               : "hidden gap-4 md:flex md:items-center"
           }
         >
-          <div className="mbl:block">
+          <div className="mr-3 mbl:block">
             <Logo />
           </div>
 
