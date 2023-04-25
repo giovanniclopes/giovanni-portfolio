@@ -32,8 +32,8 @@ export function Header() {
       <nav
         className={
           fix
-            ? "z-50 flex items-center justify-between fixed top-0 w-full h-20 py-7 px-8 mx-auto bg-gray-500 text-white text-sm font-semibold transition-all md:items-center mbl:px-4"
-            : "z-50 flex items-center justify-between fixed top-0 w-full h-24 py-3 px-10 mx-auto backdrop-blur-0 bg-gray-600/20 text-sm font-medium text-white/50 transition-all md:items-center mbl:px-4"
+            ? "z-50 flex items-center justify-between fixed top-0 w-full h-22 py-7 px-8 mx-auto bg-gray-500 text-white text-lg font-semibold transition-all md:items-center mbl:px-4"
+            : "z-50 flex items-center justify-between fixed top-0 w-full h-24 py-3 px-10 mx-auto backdrop-blur-0 bg-gray-600/20 text-lg font-medium text-white/50 transition-all md:items-center mbl:px-4"
         }
       >
         <div
