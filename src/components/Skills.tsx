@@ -7,6 +7,8 @@ import JsIcon from "../assets/icons/JsIcon";
 import ReactIcon from "../assets/icons/ReactIcon";
 import TailwindIcon from "../assets/icons/TailwindIcon";
 import WpIcon from "../assets/icons/wpIcon";
+import TsIcon from "../assets/icons/TsIcon";
+import FigmaIcon from "../assets/icons/FigmaIcon";
 
 export default function Skills() {
   return (
@@ -20,14 +22,16 @@ export default function Skills() {
       <div className="flex flex-row gap-2 mbl:flex-col">
         <SkillBox title={"HTML"} icon={<HtmlIcon />} />
         <SkillBox title={"CSS"} icon={<CssIcon />} />
-      </div>
-      <div className="flex flex-row gap-2 mbl:flex-col">
         <SkillBox title={"JavaScript"} icon={<JsIcon />} />
-        <SkillBox title={"React"} icon={<ReactIcon />} />
       </div>
       <div className="flex flex-row gap-2 mbl:flex-col">
+        <SkillBox title={"TypeScript"} icon={<TsIcon />} />
+        <SkillBox title={"React"} icon={<ReactIcon />} />
         <SkillBox title={"TailwindCSS"} icon={<TailwindIcon />} />
+      </div>
+      <div className="flex flex-row gap-2 mbl:flex-col">
         <SkillBox title={"WordPress"} icon={<WpIcon />} />
+        <SkillBox title={"Figma"} icon={<FigmaIcon />} />
       </div>
     </section>
   );
