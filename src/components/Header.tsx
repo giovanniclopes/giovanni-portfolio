@@ -124,9 +124,9 @@ export function Header() {
           onClick={clickHandler}
         >
           {togglerNav ? (
-            <X width={32} height={28} />
+            <X width={32} height={28} aria-label="close mobile menu" />
           ) : (
-            <List width={28} height={28} />
+            <List width={28} height={28} aria-label="open mobile menu" />
           )}
         </button>
       </nav>
