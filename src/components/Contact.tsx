@@ -10,7 +10,7 @@ export default function Contact() {
         <form
           action="https://formsubmit.co/giovanniclopes@gmail.com"
           className="flex flex-col"
-          method="post"
+          method="POST"
         >
           <label className="text-lg mb-1 mt-5" htmlFor="userName">
             Seu nome
@@ -45,6 +45,7 @@ export default function Contact() {
             placeholder="Olá! Eu gostaria de falar sobre {assunto}..."
             required
           ></textarea>
+          <input type="hidden" name="_template" value="table" />
           <button className="mt-4 px-4 py-5 border-none bg-red-500 font-bold cursor-pointer rounded transiton-all hover:opacity-75">
             Enviar mensagem
           </button>
