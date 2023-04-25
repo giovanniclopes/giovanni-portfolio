@@ -2,7 +2,7 @@ import SectionTitles from "./SectionTitles";
 
 export default function Contact() {
   return (
-    <section className="flex justify-center p-7 w-full mb-10">
+    <section id="contact" className="flex justify-center p-7 w-full mb-10">
       <div className="max-w-3xl w-full">
         <div className="flex items-center justify-center my-5 mb-12">
           <SectionTitles title="< Contact />" />
