@@ -52,6 +52,7 @@ export function Header() {
             className="transition-all hover:text-red-500"
             onClick={clickHandler}
             href="#about"
+            aria-label="jump to 'about' section"
           >
             Sobre mim
           </AnchorLink>
@@ -59,6 +60,7 @@ export function Header() {
             className="transition-all hover:text-red-500"
             onClick={clickHandler}
             href="#skills"
+            aria-label="jump to 'skills' section"
           >
             Skills
           </AnchorLink>
@@ -66,6 +68,7 @@ export function Header() {
             className="transition-all hover:text-red-500"
             onClick={clickHandler}
             href="#projects"
+            aria-label="go to 'projects' section"
           >
             Projetos
           </AnchorLink>
@@ -73,6 +76,7 @@ export function Header() {
             className="transition-all hover:text-red-500"
             onClick={clickHandler}
             href="#contact"
+            aria-label="jump to 'contact' section"
           >
             Contato
           </AnchorLink>
@@ -81,6 +85,7 @@ export function Header() {
           <NavLink
             to="https://linkedin.com/in/giovanni-lopes21"
             target="_blank"
+            aria-label="visit Giovanni Lopes LinkedIn"
           >
             <LinkedinLogo
               className="transition-all hover:rotate-6 hover:text-red-500"
@@ -89,7 +94,11 @@ export function Header() {
               weight="fill"
             />
           </NavLink>
-          <NavLink to="https://github.com/giovanniclopes" target="_blank">
+          <NavLink
+            to="https://github.com/giovanniclopes"
+            target="_blank"
+            aria-label="visit Giovanni Lopes GitHub"
+          >
             <GithubLogo
               className="transition-all hover:rotate-6 hover:text-red-500"
               width={28}
@@ -97,7 +106,11 @@ export function Header() {
               weight="fill"
             />
           </NavLink>
-          <NavLink to="emailto:giovanniclopes@gmail.com" target="_blank">
+          <NavLink
+            to="emailto:giovanniclopes@gmail.com"
+            target="_blank"
+            aria-label="Send a email to giovanni lopes"
+          >
             <EnvelopeSimple
               className="transition-all hover:rotate-6 hover:text-red-500"
               width={28}
