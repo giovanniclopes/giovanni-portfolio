@@ -8,6 +8,7 @@ import {
   X,
 } from "phosphor-react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import Logo from "../assets/icons/logo";
 
 export function Header() {
   const [togglerNav, setTogglerNav] = useState(false);
@@ -33,7 +34,7 @@ export function Header() {
         className={
           fix
             ? "z-50 flex items-center justify-between fixed top-0 w-full h-22 py-7 px-8 mx-auto bg-gray-500 text-white text-lg font-semibold transition-all md:items-center mbl:px-4"
-            : "z-50 flex items-center justify-between fixed top-0 w-full h-24 py-3 px-10 mx-auto backdrop-blur-0 bg-gray-600/20 text-lg font-medium text-white/50 transition-all md:items-center mbl:px-4"
+            : "z-50 flex items-center justify-between fixed top-0 w-full h-24 py-3 px-10 mx-auto backdrop-blur-0 bg-gray-600/20 text-lg font-medium text-white/50 transition-all brightness-75 md:items-center mbl:px-4"
         }
       >
         <div
@@ -43,6 +44,10 @@ export function Header() {
               : "hidden gap-4 md:flex md:items-center"
           }
         >
+          <div className="mbl:block">
+            <Logo />
+          </div>
+
           <AnchorLink
             className="transition-all hover:text-red-500"
             onClick={clickHandler}
