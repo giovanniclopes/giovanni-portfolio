@@ -8,7 +8,7 @@ import {
   X,
 } from "phosphor-react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import Logo from "../assets/icons/logo";
+import Logo from "../assets/icons/Logo";
 
 export function Header() {
   const [togglerNav, setTogglerNav] = useState(false);
