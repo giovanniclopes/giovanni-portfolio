@@ -2,15 +2,15 @@ function FigmaIcon() {
   return (
     <svg viewBox="0 0 128 128">
       <path
-        fill="#990000"
+        fill="#c94949"
         d="M45.5 129c11.9 0 21.5-9.6 21.5-21.5V86H45.5C33.6 86 24 95.6 24 107.5S33.6 129 45.5 129zm0 0"
       ></path>
       <path
-        fill="#FF0000"
+        fill="#a82525"
         d="M24 64.5C24 52.6 33.6 43 45.5 43H67v43H45.5C33.6 86 24 76.4 24 64.5zm0 0"
       ></path>
       <path
-        fill="#f24e1e"
+        fill="#bf2a2a"
         d="M24 21.5C24 9.6 33.6 0 45.5 0H67v43H45.5C33.6 43 24 33.4 24 21.5zm0 0"
       ></path>
       <path
