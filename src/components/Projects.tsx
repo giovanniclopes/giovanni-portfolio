@@ -62,7 +62,7 @@ export default function Projects() {
           href="https://github.com/giovanniclopes?tab=repositories&type=source"
           target="_blank"
         >
-          <div className="text-xl border-2 border-red-500 p-3 px-9 rounded cursor-pointer transition-all hover:bg-red-500">
+          <div className="text-xl border-2 border-red-500 p-3 px-9 rounded cursor-pointer transition-all hover:bg-red-500 mbl:mt-16">
             Ver todos os projetos...
           </div>
         </a>

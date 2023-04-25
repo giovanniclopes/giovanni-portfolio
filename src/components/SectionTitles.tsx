@@ -30,7 +30,7 @@ export default function SectionTitles(props: SectionTitlesProps) {
       initial="hidden"
       animate={control}
     >
-      <h2 className="text-5xl text-red-500 font-bold">{props.title}</h2>
+      <h2 className="text-5xl text-red-500 font-bold mbl:text-3xl">{props.title}</h2>
     </motion.div>
   );
 }
