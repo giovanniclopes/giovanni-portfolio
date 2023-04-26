@@ -62,12 +62,15 @@ export default function Projects() {
         />
       </div>
 
-      <div className="flex flex-row items-center justify-end gap-4 mt-7">
+      <div className="text-right my-10 mt-16">
         <a
           href="https://github.com/giovanniclopes?tab=repositories&type=source"
           target="_blank"
         >
-          <button aria-label="ver todos os projetos..." className="text-xl border-2 border-red-500 p-3 px-9 rounded cursor-pointer transition-all hover:bg-red-500 mbl:mt-16">
+          <button
+            aria-label="ver todos os projetos..."
+            className="text-xl border-2 border-red-500 p-3 px-9 rounded cursor-pointer transition-all hover:bg-red-500 mbl:mt-16"
+          >
             Ver todos os projetos...
           </button>
         </a>

@@ -38,7 +38,7 @@ export default function About() {
         <div className="flex items-center justify-center m-5">
           <SectionTitles title=" < About />" />
         </div>
-        <p className="text-xl w-[80%]">
+        <p className="text-xl w-[80%] mbl:w-fit mbl:text-left">
           Opa, bem vindo ao meu portfólio! Prazer, sou Giovanni Lopes e tenho{" "}
           {myCurrentAge} Anos.
           <br />
