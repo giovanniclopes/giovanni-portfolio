@@ -32,7 +32,7 @@ export default function About() {
       initial="hidden"
       animate={control}
       id="about"
-      className="about px-10 my-24"
+      className="about px-10 my-24 mbl:my-10"
     >
       <div className="flex flex-col items-center justify-center text-center gap-4">
         <div className="flex items-center justify-center m-5">
