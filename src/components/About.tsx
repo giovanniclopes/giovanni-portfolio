@@ -19,11 +19,11 @@ export default function About() {
     }
   }, [control, inView]);
 
-  var myBirthDate = new Date("07/21/2005");
-  var monthDiff = Date.now() - myBirthDate.getTime();
-  var myAgeDateFormat = new Date(monthDiff);
-  var currentYear = myAgeDateFormat.getUTCFullYear();
-  var myCurrentAge = Math.abs(currentYear - 2004);
+  const myBirthDate = new Date("07/21/2005");
+  const monthDiff = Date.now() - myBirthDate.getTime();
+  const myAgeDateFormat = new Date(monthDiff);
+  const currentYear = myAgeDateFormat.getUTCFullYear();
+  const myCurrentAge = Math.abs(currentYear - 2004);
 
   return (
     <motion.section
@@ -32,9 +32,9 @@ export default function About() {
       initial="hidden"
       animate={control}
       id="about"
-      className="about px-10 my-24 mbl:my-10"
+      className="px-10 my-24 about mbl:my-10"
     >
-      <div className="flex flex-col items-center justify-center text-center gap-4">
+      <div className="flex flex-col items-center justify-center gap-4 text-center">
         <div className="flex items-center justify-center m-5">
           <SectionTitles title=" < About />" />
         </div>
@@ -44,8 +44,8 @@ export default function About() {
           <br />
           Sou uma pessoa curiosa e sempre buscando desafios. Acredito ser uma
           pessoa talentosa e dedicada, com habilidades em{" "}
-          <span className="text-red-500 font-semibold">problem solving</span> e
-          <span className="text-red-500 font-semibold">
+          <span className="font-semibold text-red-500">problem solving</span> e
+          <span className="font-semibold text-red-500">
             {" "}
             pensamento crítico
           </span>
