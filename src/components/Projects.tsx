@@ -2,6 +2,7 @@ import ProjectBlock from "./ProjectBlock";
 import ProjectBlockReverse from "./ProjectBlockReverse";
 import SectionTitles from "./SectionTitles";
 
+import EuroFactor from "../assets/projects/project-eurofactor.webp";
 import DangerNet from "../assets/projects/project-dangernet.webp";
 import EventPlatform from "../assets/projects/project-eventplatform.webp";
 import Nordician2 from "../assets/projects/project-nordician2.webp";
@@ -14,7 +15,16 @@ export default function Projects() {
       <div className="flex items-center justify-center my-5 mb-12">
         <SectionTitles title="< Projects />" />
       </div>
-      <div className="flex flex-col gap-32">
+      <div className="flex flex-col gap-32 mt-24">
+        <ProjectBlockReverse
+          linkURL={"https://eurofactormercantil.com.br"}
+          imgURL={EuroFactor}
+          title={"Euro Factor"}
+          imgALT="Projeto Euro Factor"
+          description={
+            "A Euro Factor é uma empresa de factoring fundada em 2013 com um objetivo claro: Ajudar seus clientes a impulsionar o crescimento de suas empresas."
+          }
+        />
         <ProjectBlock
           linkURL={"https://event-platform-roan-delta.vercel.app"}
           imgURL={EventPlatform}

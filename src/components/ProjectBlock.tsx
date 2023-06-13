@@ -51,7 +51,10 @@ export default function ProjectBlock(props: ProjectBlock) {
               <p className="text-lg">"{props.description}"</p>
             </div>
             <div>
-              <button aria-label="conhecer" className="bg-red-500 rounded-md p-4 px-16 transition-all hover:opacity-75">
+              <button
+                aria-label="conhecer"
+                className="bg-red-500 rounded-md p-4 px-16 transition-all hover:opacity-75"
+              >
                 Conhecer
               </button>
             </div>

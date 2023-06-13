@@ -27,6 +27,7 @@ export default function ProjectBlockReverse(props: ProjectBlockReverse) {
       control.start("hidden");
     }
   }, [control, inView]);
+  
   return (
     <div>
       <Link to={props.linkURL} target="_blank">
