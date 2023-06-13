@@ -46,7 +46,10 @@ export default function Contact() {
             required
           ></textarea>
           <input type="hidden" name="_template" value="table" />
-          <button aria-label="Enviar mensagem" className="mt-4 px-4 py-5 border-none bg-red-500 font-bold cursor-pointer rounded transiton-all hover:opacity-75">
+          <button
+            aria-label="Enviar mensagem"
+            className="mt-4 px-4 py-5 border-none bg-red-500 font-bold cursor-pointer rounded transiton-all hover:opacity-75"
+          >
             Enviar mensagem
           </button>
         </form>
