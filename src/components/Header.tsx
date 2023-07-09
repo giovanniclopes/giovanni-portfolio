@@ -33,7 +33,7 @@ export function Header() {
       <nav
         className={
           fix
-            ? "z-50 flex items-center justify-between fixed top-0 w-full h-22 py-7 px-8 mx-auto bg-gray-500 text-white text-lg font-semibold transition-all md:items-center mbl:px-4"
+            ? "z-50 flex items-center justify-between fixed top-0 w-full h-22 py-7 px-8 mx-auto bg-gray-500 text-white text-md font-semibold transition-all md:items-center mbl:px-4"
             : "z-50 flex items-center justify-between fixed top-0 w-full h-24 py-3 px-10 mx-auto backdrop-blur-0 bg-gray-600/20 text-lg font-medium text-white/50 transition-all brightness-75 md:items-center mbl:px-4"
         }
       >
@@ -44,44 +44,49 @@ export function Header() {
               : "hidden gap-4 md:flex md:items-center"
           }
         >
-          <div className="mr-3 mbl:block">
+          <div className="mr-3 mbl:hidden">
             <Logo />
           </div>
 
-          <AnchorLink
-            className="transition-all hover:text-red-500"
-            onClick={clickHandler}
-            href="#about"
-            aria-label="jump to 'about' section"
-          >
-            Sobre mim
-          </AnchorLink>
-          <AnchorLink
-            className="transition-all hover:text-red-500"
-            onClick={clickHandler}
-            href="#skills"
-            aria-label="jump to 'skills' section"
-          >
-            Skills
-          </AnchorLink>
-          <AnchorLink
-            className="transition-all hover:text-red-500"
-            onClick={clickHandler}
-            href="#projects"
-            aria-label="go to 'projects' section"
-          >
-            Projetos
-          </AnchorLink>
-          <AnchorLink
-            className="transition-all hover:text-red-500"
-            onClick={clickHandler}
-            href="#contact"
-            aria-label="jump to 'contact' section"
-          >
-            Contato
-          </AnchorLink>
+          <div className="flex items-center justify-center gap-5 py-5 mbl:flex-col mbl:items-start mbl:gap-4">
+            <AnchorLink
+              className="transition-all hover:text-red-500 mbl:w-full mbl:py-2 mbl:pl-4 mbl:rounded hover:mbl:bg-gray-500"
+              onClick={clickHandler}
+              href="#about"
+              aria-label="jump to 'about' section"
+            >
+              Sobre mim
+            </AnchorLink>
+            <AnchorLink
+              className="transition-all hover:text-red-500 mbl:w-full mbl:py-2 mbl:pl-4 mbl:rounded hover:mbl:bg-gray-500"
+              onClick={clickHandler}
+              href="#skills"
+              aria-label="jump to 'skills' section"
+            >
+              Skills
+            </AnchorLink>
+            <AnchorLink
+              className="transition-all hover:text-red-500 mbl:w-full mbl:py-2 mbl:pl-4 mbl:rounded hover:mbl:bg-gray-500"
+              onClick={clickHandler}
+              href="#projects"
+              aria-label="go to 'projects' section"
+            >
+              Projetos
+            </AnchorLink>
+            <AnchorLink
+              className="transition-all hover:text-red-500 mbl:w-full mbl:py-2 mbl:pl-4 mbl:rounded hover:mbl:bg-gray-500"
+              onClick={clickHandler}
+              href="#contact"
+              aria-label="jump to 'contact' section"
+            >
+              Contato
+            </AnchorLink>
+          </div>
         </div>
         <div className="flex gap-5">
+          <div className="mr-3 hidden mbl:block">
+            <Logo />
+          </div>
           <NavLink
             to="https://linkedin.com/in/giovanni-lopes21"
             target="_blank"

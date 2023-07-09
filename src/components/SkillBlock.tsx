@@ -32,13 +32,14 @@ export default function SkillBlock(props: SkillBox) {
       variants={boxVariant}
       initial="hidden"
       animate={control}
+      className="group"
     >
-      <div className="flex flex-row items-center content-center self-center justify-center gap-3 bg-gray-400 w-80 h-24 rounded-lg cursor-pointer transition-all hover:brightness-90">
-        <div className="w-10 h-10">
+      <div className="flex flex-row items-center content-center self-center justify-center gap-3 bg-gray-400 border border-red-500 w-80 h-24 rounded-lg cursor-help transition-all hover:brightness-90 group-hover:bg-red-500">
+        <div className="w-14 h-14 p-3 bg-gray-400 rounded-2xl">
           <>{props.icon}</>
         </div>
         <div>
-          <h3 className="text-lg font-semibold">{props.title}</h3>
+          <h3 className="text-lg font-semibold group-hover:font-extrabold group-hover:text-gray-400">{props.title}</h3>
         </div>
       </div>
     </motion.div>

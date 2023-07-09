@@ -16,7 +16,7 @@ export default function Contact() {
             Seu nome
           </label>
           <input
-            className="bg-gray-400 rounded-sm p-2 text-lg text-white placeholder:text-white/20 placeholder:font-light placeholder:text-base focus:border focus:border-red-500 focus:outline-none"
+            className="bg-gray-400 rounded-sm px-4 py-3 text-lg text-white placeholder:text-white/20 placeholder:font-light placeholder:text-base focus:border focus:border-red-500 focus:outline-none"
             type="text"
             name="userName"
             id="userName"
@@ -27,7 +27,7 @@ export default function Contact() {
             Seu melhor e-mail
           </label>
           <input
-            className="bg-gray-400 rounded-sm p-2 text-lg text-white placeholder:text-white/20 placeholder:font-light placeholder:text-base focus:border focus:border-red-500 focus:outline-none"
+            className="bg-gray-400 rounded-sm px-4 py-3 text-lg text-white placeholder:text-white/20 placeholder:font-light placeholder:text-base focus:border focus:border-red-500 focus:outline-none"
             type="email"
             name="userEmail"
             id="userEmail"
@@ -38,7 +38,7 @@ export default function Contact() {
             Sua mensagem
           </label>
           <textarea
-            className="bg-gray-400 rounded-sm p-2 text-lg text-white placeholder:text-white/20 placeholder:font-light placeholder:text-base focus:border focus:border-red-500 focus:outline-none"
+            className="bg-gray-400 rounded-sm px-4 py-3 text-lg text-white placeholder:text-white/20 placeholder:font-light placeholder:text-base focus:border focus:border-red-500 focus:outline-none"
             name="userMessage"
             id="userMessage"
             rows={5}

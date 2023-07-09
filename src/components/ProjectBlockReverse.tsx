@@ -36,14 +36,14 @@ export default function ProjectBlockReverse(props: ProjectBlockReverse) {
           variants={boxVariant}
           initial="hidden"
           animate={control}
-          className="grid grid-cols-2 transition-all group mbl:flex mbl:flex-col-reverse mbl:gap-8"
+          className="grid grid-cols-2 items-center justify-center transition-all gap-5 group mbl:flex mbl:flex-col-reverse mbl:gap-8"
         >
           <div className="flex flex-col gap-10 items-start justify-center px-5">
-            <div className="flex flex-col gap-3">
+            <div className="flex justify-end items-end flex-col gap-3">
               <h3 className="text-3xl font-bold">{props.title}</h3>
-              <p className="text-lg">"{props.description}"</p>
+              <p className="text-lg text-end w-8/12">"{props.description}"</p>
             </div>
-            <div>
+            <div className="flex items-end justify-end w-full">
               <button className="bg-red-500 rounded-md p-4 px-16 transition-all hover:opacity-75">
                 Conhecer
               </button>
@@ -51,7 +51,7 @@ export default function ProjectBlockReverse(props: ProjectBlockReverse) {
           </div>
           <div>
             <img
-              className="rounded-md transition-all group-hover:opacity-75"
+              className="rounded-md transition-all opacity-75"
               src={props.imgURL}
               alt={props.imgALT}
             />

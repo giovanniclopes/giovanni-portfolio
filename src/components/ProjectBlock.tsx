@@ -36,9 +36,9 @@ export default function ProjectBlock(props: ProjectBlock) {
           variants={boxVariant}
           initial="hidden"
           animate={control}
-          className="grid grid-cols-2 transition-all group mbl:grid-cols-1 mbl:gap-8"
+          className="grid grid-cols-2 items-center justify-center gap-5 transition-all group mbl:grid-cols-1 mbl:gap-8"
         >
-          <div>
+          <div className="flex items-end justify-end">
             <img
               className="rounded-md transition-all group-hover:opacity-75"
               src={props.imgURL}
@@ -48,7 +48,7 @@ export default function ProjectBlock(props: ProjectBlock) {
           <div className="flex flex-col gap-10 items-start justify-center px-5">
             <div className="flex flex-col gap-3">
               <h3 className="text-3xl font-bold">{props.title}</h3>
-              <p className="text-lg">"{props.description}"</p>
+              <p className="text-lg w-8/12">"{props.description}"</p>
             </div>
             <div>
               <button
