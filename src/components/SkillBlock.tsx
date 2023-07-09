@@ -6,6 +6,7 @@ import { useEffect } from "react";
 
 interface SkillBox {
   title: string;
+  text?: string;
   icon: IconBaseProps | Icon.IconProps;
 }
 
@@ -40,6 +41,9 @@ export default function SkillBlock(props: SkillBox) {
         </div>
         <div>
           <h3 className="text-lg font-semibold group-hover:font-extrabold group-hover:text-gray-400">{props.title}</h3>
+        </div>
+        <div>
+          <p>{props.text}</p>
         </div>
       </div>
     </motion.div>

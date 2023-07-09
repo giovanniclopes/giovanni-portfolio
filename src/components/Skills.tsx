@@ -9,6 +9,7 @@ import TailwindIcon from "../assets/icons/TailwindIcon";
 import WpIcon from "../assets/icons/wpIcon";
 import TsIcon from "../assets/icons/TsIcon";
 import FigmaIcon from "../assets/icons/FigmaIcon";
+import { Monitor } from "phosphor-react";
 
 export default function Skills() {
   return (
@@ -19,19 +20,20 @@ export default function Skills() {
       <div className="my-5 mb-12">
         <SectionTitles title="< Skills />" />
       </div>
-      <div className="flex flex-row gap-2 mbl:flex-col">
+      <div className="flex flex-row gap-5 mbl:flex-col">
         <SkillBox title={"HTML"} icon={<HtmlIcon />} />
         <SkillBox title={"CSS"} icon={<CssIcon />} />
         <SkillBox title={"JavaScript"} icon={<JsIcon />} />
       </div>
-      <div className="flex flex-row gap-2 mbl:flex-col">
+      <div className="flex flex-row gap-5 mbl:flex-col">
         <SkillBox title={"TypeScript"} icon={<TsIcon />} />
         <SkillBox title={"React"} icon={<ReactIcon />} />
         <SkillBox title={"TailwindCSS"} icon={<TailwindIcon />} />
       </div>
-      <div className="flex flex-row gap-2 mbl:flex-col">
+      <div className="flex flex-row gap-5 mbl:flex-col">
         <SkillBox title={"WordPress"} icon={<WpIcon />} />
         <SkillBox title={"Figma"} icon={<FigmaIcon />} />
+        <SkillBox title={"UI/UX"} icon={<Monitor className="w-8 h-8 text-red-500" />} />
       </div>
     </section>
   );

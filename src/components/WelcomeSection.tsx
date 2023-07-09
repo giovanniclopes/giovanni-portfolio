@@ -28,7 +28,7 @@ export default function WelcomeSection() {
       initial="hidden"
       animate={control}
     >
-      <div className="flex flex-col items-center justify-center gap-5 font-bold">
+      <div className="flex flex-col items-center justify-center gap-5 font-bold mt-12">
         <div>
           <h1 className="text-7xl mbl:text-4xl">Olá! Sou Giovanni</h1>
         </div>
