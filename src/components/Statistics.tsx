@@ -20,7 +20,7 @@ export default function Statistics() {
   }, [control, inView]);
 
   return (
-    <motion.div
+    <motion.section
       className="px-24 pt-32 pb-5 w-full"
       ref={ref}
       variants={boxVariant}
@@ -52,6 +52,6 @@ export default function Statistics() {
           </div>
         </div>
       </div>
-    </motion.div>
+    </motion.section>
   );
 }
