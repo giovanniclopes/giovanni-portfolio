@@ -48,7 +48,7 @@ export default function ProjectBlock(props: ProjectBlock) {
           <div className="flex flex-col gap-10 items-start justify-center px-5">
             <div className="flex flex-col gap-3 mbl:items-center">
               <h3 className="text-3xl font-bold">{props.title}</h3>
-              <p className="text-lg w-8/12 mbl:w-full mbl:text-center">
+              <p className="text-lg w-full mbl:text-center">
                 "{props.description}"
               </p>
             </div>

@@ -1,11 +1,14 @@
 import { BrowserRouter as Router } from "react-router-dom";
 import { Router as AllRoutes } from "./../Router";
-import ScrollToTop from "./components/ScrollToTop";
+import { Header } from "../src/components/Header";
+
+import ScrollToTopButton from "./components/ScrollToTopButton";
 
 function App() {
   return (
     <Router>
-      <ScrollToTop />
+      <Header />
+      <ScrollToTopButton />
       <AllRoutes />
     </Router>
   );

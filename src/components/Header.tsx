@@ -33,7 +33,7 @@ export function Header() {
       <nav
         className={
           fix
-            ? "z-50 flex items-center justify-between fixed top-0 w-full h-22 py-7 px-8 mx-auto bg-gray-500 text-white text-md font-semibold transition-all md:items-center mbl:px-4"
+            ? "z-50 flex items-center justify-between fixed top-0 w-full h-22 py-4 px-8 mx-auto bg-gray-500 text-white text-md font-semibold transition-all md:items-center mbl:px-4 mbl:py-7"
             : "z-50 flex items-center justify-between fixed top-0 w-full h-24 py-3 px-10 mx-auto backdrop-blur-0 bg-gray-600/20 text-lg font-medium text-white/50 transition-all brightness-75 md:items-center mbl:px-4"
         }
       >
@@ -93,9 +93,7 @@ export function Header() {
             aria-label="visit Giovanni Lopes LinkedIn"
           >
             <LinkedinLogo
-              className="transition-all hover:rotate-6 hover:text-red-500"
-              width={28}
-              height={28}
+              className="w-7 h-7 transition-all hover:rotate-6 hover:text-red-500"
               weight="fill"
             />
           </NavLink>
@@ -105,9 +103,7 @@ export function Header() {
             aria-label="visit Giovanni Lopes GitHub"
           >
             <GithubLogo
-              className="transition-all hover:rotate-6 hover:text-red-500"
-              width={28}
-              height={28}
+              className="w-7 h-7 transition-all hover:rotate-6 hover:text-red-500"
               weight="fill"
             />
           </NavLink>
@@ -117,9 +113,7 @@ export function Header() {
             aria-label="Send a email to giovanni lopes"
           >
             <EnvelopeSimple
-              className="transition-all hover:rotate-6 hover:text-red-500"
-              width={28}
-              height={28}
+              className="w-7 h-7 transition-all hover:rotate-6 hover:text-red-500"
               weight="fill"
             />
           </NavLink>
