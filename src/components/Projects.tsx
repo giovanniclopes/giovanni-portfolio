@@ -77,7 +77,7 @@ export default function Projects() {
         />
       </div>
 
-      <div className="text-right my-10 mt-16">
+      <div className="flex items-end justify-end text-right my-10 mt-16 mbl:items-center mbl:justify-center">
         <a
           href="https://github.com/giovanniclopes?tab=repositories&type=source"
           target="_blank"

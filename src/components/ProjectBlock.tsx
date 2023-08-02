@@ -46,11 +46,13 @@ export default function ProjectBlock(props: ProjectBlock) {
             />
           </div>
           <div className="flex flex-col gap-10 items-start justify-center px-5">
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-3 mbl:items-center">
               <h3 className="text-3xl font-bold">{props.title}</h3>
-              <p className="text-lg w-8/12">"{props.description}"</p>
+              <p className="text-lg w-8/12 mbl:w-full mbl:text-center">
+                "{props.description}"
+              </p>
             </div>
-            <div>
+            <div className="flex items-start justify-start w-full mbl:items-center mbl:justify-center">
               <button
                 aria-label="conhecer"
                 className="bg-red-500 rounded-md p-4 px-16 transition-all hover:opacity-75"

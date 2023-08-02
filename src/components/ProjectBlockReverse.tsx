@@ -39,11 +39,11 @@ export default function ProjectBlockReverse(props: ProjectBlockReverse) {
           className="grid grid-cols-2 items-center justify-center transition-all gap-5 group mbl:flex mbl:flex-col-reverse mbl:gap-8"
         >
           <div className="flex flex-col gap-10 items-start justify-center px-5">
-            <div className="flex justify-end items-end flex-col gap-3">
+            <div className="flex justify-end items-end flex-col gap-3 mbl:items-center">
               <h3 className="text-3xl font-bold">{props.title}</h3>
-              <p className="text-lg text-end w-8/12">"{props.description}"</p>
+              <p className="text-lg text-end w-8/12 mbl:w-full mbl:text-center">"{props.description}"</p>
             </div>
-            <div className="flex items-end justify-end w-full">
+            <div className="flex items-end justify-end w-full mbl:items-center mbl:justify-center">
               <button className="bg-red-500 rounded-md p-4 px-16 transition-all hover:opacity-75">
                 Conhecer
               </button>
