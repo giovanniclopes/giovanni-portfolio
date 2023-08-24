@@ -18,13 +18,6 @@ export default function About() {
       control.start("hidden");
     }
   }, [control, inView]);
-
-  const myBirthDate = new Date("07/21/2005");
-  const monthDiff = Date.now() - myBirthDate.getTime();
-  const myAgeDateFormat = new Date(monthDiff);
-  const currentYear = myAgeDateFormat.getUTCFullYear();
-  const myCurrentAge = Math.abs(currentYear - 2004);
-
   return (
     <motion.section
       ref={ref}
@@ -40,7 +33,7 @@ export default function About() {
         </div>
         <p className="text-xl w-[80%] mbl:w-fit mbl:text-left">
           Opa, bem vindo ao meu portfólio! Prazer, sou Giovanni Lopes e tenho{" "}
-          {myCurrentAge} Anos.
+          18 Anos.
           <br />
           Sou uma pessoa curiosa e sempre buscando desafios. Acredito ser uma
           pessoa talentosa e dedicada, com habilidades em{" "}
