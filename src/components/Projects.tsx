@@ -29,15 +29,6 @@ export default function Projects() {
 
         <ProjectBlock
           linkURL={"https://event-platform-roan-delta.vercel.app"}
-          imgURL={EventPlatform}
-          title={"Event Platform"}
-          imgALT="Projeto Event Platform"
-          description={
-            "Projeto no qual ganhei experiência com ReactJS, TypeScript, GraphQL e TailwindCSS"
-          }
-        />
-        <ProjectBlock
-          linkURL={"https://event-platform-roan-delta.vercel.app"}
           imgURL={IntelliOn}
           title={"IntelliOn"}
           imgALT="Projeto IntelliOn"
