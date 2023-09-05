@@ -4,7 +4,6 @@ import SectionTitles from "./SectionTitles";
 
 import EuroFactor from "../assets/projects/project-eurofactor.webp";
 import DangerNet from "../assets/projects/project-dangernet.webp";
-import EventPlatform from "../assets/projects/project-eventplatform.webp";
 import IntelliOn from "../assets/projects/project-intellion.webp";
 import Nordician2 from "../assets/projects/project-nordician2.webp";
 import EdgeLine from "../assets/projects/project-edgeline.webp";
