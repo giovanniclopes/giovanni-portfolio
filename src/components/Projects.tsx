@@ -27,7 +27,7 @@ export default function Projects() {
         />
 
         <ProjectBlock
-          linkURL={"https://event-platform-roan-delta.vercel.app"}
+          linkURL={"https://intellion.vercel.app/"}
           imgURL={IntelliOn}
           title={"IntelliOn"}
           imgALT="Projeto IntelliOn"
