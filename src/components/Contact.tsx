@@ -29,10 +29,10 @@ export default function Contact() {
           <input
             className="bg-gray-400 rounded-sm px-4 py-3 text-lg text-white placeholder:text-white/20 placeholder:font-light placeholder:text-base focus:border focus:border-red-500 focus:outline-none"
             type="email"
-            name="userEmail"
-            id="userEmail"
-            placeholder="Me diga seu e-mail"
-            required
+              name="userEmail"
+              id="userEmail"
+              placeholder="Me diga seu e-mail"
+              required
           />
           <label className="text-lg mb-1 mt-5" htmlFor="userMessage">
             Sua mensagem
