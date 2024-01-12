@@ -32,7 +32,7 @@ export default function Projects() {
           title={"IntelliOn"}
           imgALT="Projeto IntelliOn"
           description={
-            "O IntelliOn aulas e artigos para ensinar idosos, crianças e pais a navegar na internet com segurança e de maneira correta."
+            "O IntelliOn fornece aulas e artigos para ensinar idosos, crianças e pais a navegar na internet com segurança e de maneira correta."
           }
         />
 
