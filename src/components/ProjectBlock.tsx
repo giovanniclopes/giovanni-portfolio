@@ -9,6 +9,7 @@ interface ProjectBlock {
   imgALT?: string;
   title: string;
   description: string;
+  otherText?: string;
 }
 
 const boxVariant = {
@@ -47,7 +48,10 @@ export default function ProjectBlock(props: ProjectBlock) {
           </div>
           <div className="flex flex-col gap-10 items-start justify-center px-5">
             <div className="flex flex-col gap-3 mbl:items-center">
-              <h3 className="text-3xl font-bold">{props.title}</h3>
+              <div className="flex-row">
+                <h3 className="text-3xl font-bold">{props.title}</h3>
+                <span>{props.otherText}</span>
+              </div>
               <p className="text-lg w-full mbl:text-center">
                 "{props.description}"
               </p>

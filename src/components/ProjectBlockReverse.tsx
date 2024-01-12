@@ -9,6 +9,7 @@ interface ProjectBlockReverse {
   imgALT?: string;
   title: string;
   description: string;
+  otherText?: string;
 }
 
 const boxVariant = {
@@ -40,8 +41,13 @@ export default function ProjectBlockReverse(props: ProjectBlockReverse) {
         >
           <div className="flex flex-col gap-10 items-start justify-center px-5">
             <div className="flex justify-end items-end flex-col gap-3 mbl:items-center">
-              <h3 className="text-3xl font-bold">{props.title}</h3>
-              <p className="text-lg text-end w-full mbl:text-center">"{props.description}"</p>
+              <div className="flex flex-row gap-3">
+                <span className="text-red-500 font-medium">{props.otherText}</span>
+                <h3 className="text-3xl font-bold">{props.title}</h3>
+              </div>
+              <p className="text-lg text-end w-full mbl:text-center">
+                "{props.description}"
+              </p>
             </div>
             <div className="flex items-end justify-end w-full mbl:items-center mbl:justify-center">
               <button className="bg-red-500 rounded-md p-4 px-16 transition-all hover:opacity-75">

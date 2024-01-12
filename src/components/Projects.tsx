@@ -60,6 +60,7 @@ export default function Projects() {
           linkURL={"https://giovanniclopes.github.io/dangernet/"}
           imgURL={DangerNet}
           title={"Danger Net"}
+          otherText="[Em manutenção]"
           imgALT="Projeto Danger Net"
           description={
             "Aqui você irá descobrir os mistérios e as verdades pro trás da grande internet."

@@ -10,6 +10,7 @@ import WpIcon from "../assets/icons/wpIcon";
 import TsIcon from "../assets/icons/TsIcon";
 import FigmaIcon from "../assets/icons/FigmaIcon";
 import { Monitor } from "phosphor-react";
+import PythonIcon from "../assets/icons/PythonIcon";
 
 export default function Skills() {
   return (
@@ -34,6 +35,9 @@ export default function Skills() {
         <SkillBox title={"WordPress"} icon={<WpIcon />} />
         <SkillBox title={"Figma"} icon={<FigmaIcon />} />
         <SkillBox title={"UI/UX"} icon={<Monitor className="w-8 h-8 text-red-500" />} />
+      </div>
+      <div className="flex flex-row gap-5 mbl:flex-col">
+        <SkillBox title={"Python"} icon={<PythonIcon />} />
       </div>
     </section>
   );
