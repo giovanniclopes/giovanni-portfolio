@@ -7,6 +7,7 @@ const boxVariant = {
   visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
   hidden: { opacity: 0, scale: 0 },
 };
+
 export default function About() {
   const control = useAnimation();
   const [ref, inView] = useInView();
@@ -32,7 +33,7 @@ export default function About() {
           <SectionTitles title=" < About />" />
         </div>
         <p className="text-xl w-[80%] mbl:w-fit mbl:text-left">
-          Opa, bem vindo ao meu portfólio! Prazer, sou Giovanni Lopes e tenho{" "}
+          Olá, bem vindo ao meu portfólio! Prazer, sou Giovanni Lopes e tenho{" "}
           18 Anos.
           <br />
           Sou uma pessoa curiosa e sempre buscando desafios. Acredito ser uma

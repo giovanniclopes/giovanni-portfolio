@@ -34,7 +34,7 @@ export default function Statistics() {
             <p>Anos de experiência</p>
           </div>
           <div className="flex flex-col items-center justify-center gap-2">
-            <h4 className="text-red-500 font-bold text-5xl">+10</h4>
+            <h4 className="text-red-500 font-bold text-5xl">+6</h4>
             <p>Projetos desenvolvidos</p>
           </div>
           <div className="flex flex-col items-center justify-center gap-2">

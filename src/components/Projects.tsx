@@ -37,24 +37,22 @@ export default function Projects() {
         />
 
         <ProjectBlockReverse
+          linkURL={"https://vibrancee.vercel.app"}
+          imgURL={Vibrance}
+          title={"Vibrance"}
+          imgALT="Projeto Vibrance"
+          description={
+            "A Vibrance é uma plataforma especializada na venda de livros e quadrinhos."
+          }
+        />
+
+        <ProjectBlock
           linkURL={"https://nordician2.vercel.app"}
           imgURL={Nordician2}
           title={"Nordician"}
           imgALT="Projeto Nordician2"
           description={
             "Olá viajante, bem vinda(o) ao site Nordician. Aqui forneço diversos artigos para quem busca por informações sobre a cultura nórdica. Contendo artigos sobre o mundo real, e sobre o mundo místico."
-          }
-        />
-
-        <ProjectBlock
-          linkURL={
-            "https://www.figma.com/proto/UFZMwTJIpG2yoSA7GgTFAD/Vibrance?page-id=0%3A1&node-id=1-3&viewport=819%2C316%2C0.15&scaling=min-zoom&starting-point-node-id=351%3A599"
-          }
-          imgURL={Vibrance}
-          title={"Vibrance"}
-          imgALT="Projeto Vibrance"
-          description={
-            "Vibrance é um site fictício de vendas online, onde é possível comprar livros físicos e digitais."
           }
         />
 
