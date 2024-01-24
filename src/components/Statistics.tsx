@@ -1,31 +1,7 @@
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
-
-const boxVariant = {
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.7 } },
-  hidden: { opacity: 0, scale: 0 },
-};
-
 export default function Statistics() {
-  const control = useAnimation();
-  const [ref, inView] = useInView();
-
-  useEffect(() => {
-    if (inView) {
-      control.start("visible");
-    } else {
-      control.start("hidden");
-    }
-  }, [control, inView]);
-
   return (
-    <motion.section
+    <div
       className="px-24 pt-32 pb-5 w-full mbl:px-12"
-      ref={ref}
-      variants={boxVariant}
-      initial="hidden"
-      animate={control}
     >
       <div className="flex bg-gray-400 rounded-lg p-12">
         <div className="grid grid-cols-4 items-center justify-between w-full mbl:grid-cols-1 mbl:gap-y-12 mbl:text-center mbl:text-lg">
@@ -52,6 +28,6 @@ export default function Statistics() {
           </div>
         </div>
       </div>
-    </motion.section>
+    </div>
   );
 }
