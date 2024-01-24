@@ -30,7 +30,7 @@ export default function WelcomeSection() {
     >
       <div className="flex flex-col items-center justify-center gap-5 font-bold mt-12">
         <div>
-          <h1 className="text-7xl mbl:text-4xl">Olá! Sou Giovanni</h1>
+          <h1 className="text-8xl mbl:text-4xl">Olá! Sou Giovanni</h1>
         </div>
         <div>
           <span className="text-4xl text-red-500 mbl:text-2xl">

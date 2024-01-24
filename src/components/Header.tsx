@@ -1,14 +1,14 @@
 import { NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
-import {
-  EnvelopeSimple,
-  GithubLogo,
-  LinkedinLogo,
-  List,
-  X,
-} from "phosphor-react";
+import { List, X } from "phosphor-react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import Logo from "../assets/icons/Logo";
+import linkedinIconNormal from "../assets/icons/svg/linkedinIconNormal.svg";
+import linkedinIconHover from "../assets/icons/svg/linkedinIconHover.svg";
+import githubIconNormal from "../assets/icons/svg/githubIconNormal.svg";
+import githubIconHover from "../assets/icons/svg/githubIconHover.svg";
+import emailIconNormal from "../assets/icons/svg/emailIconNormal.svg";
+import emailIconHover from "../assets/icons/svg/emailIconHover.svg";
 
 export function Header() {
   const [togglerNav, setTogglerNav] = useState(false);
@@ -44,7 +44,7 @@ export function Header() {
       <nav
         className={
           fix
-            ? "z-50 flex items-center justify-between fixed top-0 w-full h-22 py-4 px-8 mx-auto bg-gray-500 text-white text-md font-semibold transition-all md:items-center mbl:px-4 mbl:py-7"
+            ? "z-50 flex items-center justify-between fixed top-0 w-full h-22 py-4 px-16 mx-auto bg-gray-500 text-white text-md font-semibold transition-all md:items-center mbl:px-4 mbl:py-7"
             : "z-50 flex items-center justify-between fixed top-0 w-full h-24 py-3 px-10 mx-auto backdrop-blur-0 bg-gray-600/20 text-lg font-medium text-white/50 transition-all brightness-75 md:items-center mbl:px-4"
         }
       >
@@ -106,7 +106,7 @@ export function Header() {
             </AnchorLink>
           </div>
         </div>
-        <div className="flex gap-5">
+        <div className="flex items-center justify-center gap-6">
           <div className="mr-3 hidden mbl:block">
             <Logo />
           </div>
@@ -115,9 +115,12 @@ export function Header() {
             target="_blank"
             aria-label="visit Giovanni Lopes LinkedIn"
           >
-            <LinkedinLogo
-              className="w-7 h-7 transition-all hover:rotate-6 hover:text-red-500"
-              weight="fill"
+            <img
+              src={linkedinIconNormal}
+              alt="Linkedin Icon"
+              className="mbl:w-6 mbl:h-6 transition-all hover:rotate-6"
+              onMouseOver={(e) => (e.currentTarget.src = linkedinIconHover)}
+              onMouseOut={(e) => (e.currentTarget.src = linkedinIconNormal)}
             />
           </NavLink>
           <NavLink
@@ -125,9 +128,12 @@ export function Header() {
             target="_blank"
             aria-label="visit Giovanni Lopes GitHub"
           >
-            <GithubLogo
-              className="w-7 h-7 transition-all hover:rotate-6 hover:text-red-500"
-              weight="fill"
+            <img
+              src={githubIconNormal}
+              alt="Github Icon"
+              className="mbl:w-6 mbl:h-6 transition-all hover:rotate-6"
+              onMouseOver={(e) => (e.currentTarget.src = githubIconHover)}
+              onMouseOut={(e) => (e.currentTarget.src = githubIconNormal)}
             />
           </NavLink>
           <NavLink
@@ -135,9 +141,12 @@ export function Header() {
             target="_blank"
             aria-label="Send a email to giovanni lopes"
           >
-            <EnvelopeSimple
-              className="w-7 h-7 transition-all hover:rotate-6 hover:text-red-500"
-              weight="fill"
+            <img
+              src={emailIconNormal}
+              alt="Email Icon"
+              className="mbl:w-6 mbl:h-6 transition-all hover:rotate-6"
+              onMouseOver={(e) => (e.currentTarget.src = emailIconHover)}
+              onMouseOut={(e) => (e.currentTarget.src = emailIconNormal)}
             />
           </NavLink>
         </div>

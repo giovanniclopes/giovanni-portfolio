@@ -33,10 +33,9 @@ export default function About() {
           <SectionTitles title=" < About />" />
         </div>
         <p className="text-xl w-[80%] mbl:w-fit mbl:text-left mbl:text-lg">
-          Olá, seja muito bem-vindo ao meu portfólio!
+          Olá, Me chamo <span className="font-semibold">Giovanni Lopes.</span>{" "}
           <br />
-          Me chamo <span className="font-semibold">Giovanni Lopes</span> e
-          atualmente tenho 18 anos.
+          seja muito bem-vindo ao meu portfólio!
           <br />
           <br />
           <span>
