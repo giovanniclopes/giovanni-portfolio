@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import {
   EnvelopeSimple,
   GithubLogo,
@@ -31,14 +31,12 @@ export function Header() {
     };
   }, []);
 
-  const handleLinkClick = () => {
-    setIsOpen(false);
-  };
-
-  window.addEventListener("scroll", setFixed);
-
   const clickHandler = () => {
     setTogglerNav(!togglerNav);
+  };
+
+  const handleLinkClick = () => {
+    setTogglerNav(false);
   };
 
   return (
@@ -64,7 +62,10 @@ export function Header() {
           <div className="flex items-center justify-center gap-5 py-5 mbl:flex-col mbl:items-start mbl:gap-4">
             <AnchorLink
               className="transition-all hover:text-red-500 mbl:w-full mbl:py-2 mbl:pl-4 mbl:rounded hover:mbl:bg-gray-500"
-              onClick={handleLinkClick}
+              onClick={() => {
+                clickHandler();
+                handleLinkClick();
+              }}
               href="#about"
               aria-label="jump to 'about' section"
             >
@@ -72,7 +73,10 @@ export function Header() {
             </AnchorLink>
             <AnchorLink
               className="transition-all hover:text-red-500 mbl:w-full mbl:py-2 mbl:pl-4 mbl:rounded hover:mbl:bg-gray-500"
-              onClick={handleLinkClick}
+              onClick={() => {
+                clickHandler();
+                handleLinkClick();
+              }}
               href="#skills"
               aria-label="jump to 'skills' section"
             >
@@ -80,7 +84,10 @@ export function Header() {
             </AnchorLink>
             <AnchorLink
               className="transition-all hover:text-red-500 mbl:w-full mbl:py-2 mbl:pl-4 mbl:rounded hover:mbl:bg-gray-500"
-              onClick={handleLinkClick}
+              onClick={() => {
+                clickHandler();
+                handleLinkClick();
+              }}
               href="#projects"
               aria-label="go to 'projects' section"
             >
@@ -88,7 +95,10 @@ export function Header() {
             </AnchorLink>
             <AnchorLink
               className="transition-all hover:text-red-500 mbl:w-full mbl:py-2 mbl:pl-4 mbl:rounded hover:mbl:bg-gray-500"
-              onClick={handleLinkClick}
+              onClick={() => {
+                clickHandler();
+                handleLinkClick();
+              }}
               href="#contact"
               aria-label="jump to 'contact' section"
             >
