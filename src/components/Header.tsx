@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   EnvelopeSimple,
   GithubLogo,
@@ -21,6 +21,19 @@ export function Header() {
       setFix(false);
     }
   }
+
+  useEffect(() => {
+    window.addEventListener("scroll", setFixed);
+
+    // Remover o evento quando o componente for desmontado
+    return () => {
+      window.removeEventListener("scroll", setFixed);
+    };
+  }, []);
+
+  const handleLinkClick = () => {
+    setIsOpen(false);
+  };
 
   window.addEventListener("scroll", setFixed);
 
@@ -51,7 +64,7 @@ export function Header() {
           <div className="flex items-center justify-center gap-5 py-5 mbl:flex-col mbl:items-start mbl:gap-4">
             <AnchorLink
               className="transition-all hover:text-red-500 mbl:w-full mbl:py-2 mbl:pl-4 mbl:rounded hover:mbl:bg-gray-500"
-              onClick={clickHandler}
+              onClick={handleLinkClick}
               href="#about"
               aria-label="jump to 'about' section"
             >
@@ -59,7 +72,7 @@ export function Header() {
             </AnchorLink>
             <AnchorLink
               className="transition-all hover:text-red-500 mbl:w-full mbl:py-2 mbl:pl-4 mbl:rounded hover:mbl:bg-gray-500"
-              onClick={clickHandler}
+              onClick={handleLinkClick}
               href="#skills"
               aria-label="jump to 'skills' section"
             >
@@ -67,7 +80,7 @@ export function Header() {
             </AnchorLink>
             <AnchorLink
               className="transition-all hover:text-red-500 mbl:w-full mbl:py-2 mbl:pl-4 mbl:rounded hover:mbl:bg-gray-500"
-              onClick={clickHandler}
+              onClick={handleLinkClick}
               href="#projects"
               aria-label="go to 'projects' section"
             >
@@ -75,7 +88,7 @@ export function Header() {
             </AnchorLink>
             <AnchorLink
               className="transition-all hover:text-red-500 mbl:w-full mbl:py-2 mbl:pl-4 mbl:rounded hover:mbl:bg-gray-500"
-              onClick={clickHandler}
+              onClick={handleLinkClick}
               href="#contact"
               aria-label="jump to 'contact' section"
             >
