@@ -22,6 +22,7 @@ export function Header() {
     }
   }
 
+  
   useEffect(() => {
     window.addEventListener("scroll", setFixed);
 
