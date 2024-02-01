@@ -3,6 +3,7 @@ import { Router as AllRoutes } from "./../Router";
 import { Header } from "../src/components/Header";
 
 import ScrollToTopButton from "./components/ScrollToTopButton";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <ScrollToTopButton />
       <AllRoutes />
+      <SpeedInsights />
     </Router>
   );
 }
