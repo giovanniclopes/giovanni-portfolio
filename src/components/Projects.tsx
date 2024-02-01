@@ -11,9 +11,13 @@ import Vibrance from "../assets/projects/project-vibrance.webp";
 
 export default function Projects() {
   return (
-    <section id="projects" className="projects m-12 mt-36">
+    <section
+      id="projects"
+      className="projects m-12 mt-36"
+      aria-labelledby="projects-section-heading"
+    >
       <div className="flex items-center justify-center my-5 mb-12">
-        <SectionTitles title="< Projects />" />
+        <SectionTitles title="Projetos" />
       </div>
       <div className="flex flex-col items-center justify-center gap-36 mt-24">
         <ProjectBlockReverse

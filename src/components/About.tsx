@@ -19,6 +19,7 @@ export default function About() {
       control.start("hidden");
     }
   }, [control, inView]);
+
   return (
     <motion.section
       ref={ref}
@@ -27,24 +28,33 @@ export default function About() {
       animate={control}
       id="about"
       className="px-10 my-24 about mbl:my-10"
+      aria-labelledby="about-section-heading"
     >
       <div className="flex flex-col items-center justify-center gap-4 text-left">
         <div className="flex items-center justify-center m-5 mb-16">
-          <SectionTitles title=" < About />" />
+          <SectionTitles title="Sobre Mim" />
         </div>
-        <p className="text-xl w-[80%] mbl:w-fit mbl:text-left mbl:text-lg">
-          Olá, Me chamo <span className="font-semibold">Giovanni Lopes.</span>{" "}
+        <p
+          id="about-section-heading"
+          className="text-xl w-[80%] mbl:w-fit mbl:text-left mbl:text-lg"
+        >
+          Olá, meu nome é <span className="font-semibold">Giovanni Lopes</span>.
           <br />
-          seja muito bem-vindo ao meu portfólio!
+          Seja muito bem-vindo ao meu portfólio!
           <br />
           <br />
           <span>
             Minha essência é marcada pela curiosidade e pela busca constante por
             desafios que impulsionem meu crescimento. Me caracterizo como alguém
-            talentoso e dedicado,destacando-me especialmente em habilidades como{" "}
-            <span className="font-semibold text-red-500">problem solving</span>{" "}
-            e
-            <span className="font-semibold text-red-500"> web development</span>
+            talentoso e dedicado, destacando-me especialmente em habilidades
+            como{" "}
+            <span className="font-semibold text-red-500">
+              resolução de problemas
+            </span>{" "}
+            e{" "}
+            <span className="font-semibold text-red-500">
+              desenvolvimento web
+            </span>
             .
             <br />
             <br />
