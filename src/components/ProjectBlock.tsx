@@ -52,7 +52,7 @@ export default function ProjectBlock(props: ProjectBlock) {
                 <h3 className="text-3xl font-bold">{props.title}</h3>
                 <span>{props.otherText}</span>
               </div>
-              <p className="text-lg w-full mbl:text-center">
+              <p className="w-4/6 text-lg mbl:w-full mbl:text-center">
                 "{props.description}"
               </p>
             </div>

@@ -42,10 +42,12 @@ export default function ProjectBlockReverse(props: ProjectBlockReverse) {
           <div className="flex flex-col gap-10 items-start justify-center px-5">
             <div className="flex justify-end items-end flex-col gap-3 mbl:items-center">
               <div className="flex flex-row gap-3 mbl:flex-col">
-                <span className="text-red-500 font-medium">{props.otherText}</span>
+                <span className="text-red-500 font-medium">
+                  {props.otherText}
+                </span>
                 <h3 className="text-3xl font-bold">{props.title}</h3>
               </div>
-              <p className="text-lg text-end w-full mbl:text-center">
+              <p className="w-4/6 text-lg text-end mbl:w-full mbl:text-centerr">
                 "{props.description}"
               </p>
             </div>
