@@ -2,11 +2,11 @@ import ProjectBlock from "./ProjectBlock";
 import ProjectBlockReverse from "./ProjectBlockReverse";
 import SectionTitles from "./SectionTitles";
 
+import Sonoeconforto from "../assets/projects/project-sonoeconforto.webp";
 import EuroFactor from "../assets/projects/project-eurofactor.webp";
 import DangerNet from "../assets/projects/project-dangernet.webp";
 import IntelliOn from "../assets/projects/project-intellion.webp";
 import Nordician2 from "../assets/projects/project-nordician2.webp";
-import EdgeLine from "../assets/projects/project-edgeline.webp";
 import Vibrance from "../assets/projects/project-vibrance.webp";
 
 export default function Projects() {
@@ -20,6 +20,15 @@ export default function Projects() {
         <SectionTitles title="Projetos" />
       </div>
       <div className="flex flex-col items-center justify-center gap-36 mt-24">
+        <ProjectBlock
+          linkURL={"https://www.sonoconforto.com.br/"}
+          imgURL={Sonoeconforto}
+          title={"Sono&Conforto"}
+          imgALT="Projeto Sono&Conforto"
+          description={
+            "Na Sono&Conforto, dedicamos nossa expertise ao seu bem-estar, proporcionando não apenas conforto, mas também padrões excepcionais de higiene e durabilidade para seu estofado."
+          }
+        />
         <ProjectBlockReverse
           linkURL={"https://eurofactormercantil.com.br"}
           imgURL={EuroFactor}
@@ -71,13 +80,6 @@ export default function Projects() {
           }
         />
 
-        <ProjectBlock
-          linkURL={"https://giovanniclopes.github.io/EdgeLine/"}
-          imgURL={EdgeLine}
-          title={"EdgeLine"}
-          imgALT="Projeto EdgeLine"
-          description={"Protótipo de website de vendas de HQs."}
-        />
       </div>
 
       <div className="flex items-end justify-end text-right my-10 mt-16 mbl:items-center mbl:justify-center">
