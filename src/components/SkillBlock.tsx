@@ -5,6 +5,7 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
 interface SkillBox {
+  link: string;
   title: string;
   text?: string;
   icon: IconBaseProps | Icon.IconProps;
@@ -35,17 +36,19 @@ export default function SkillBlock(props: SkillBox) {
       animate={control}
       className="group"
     >
-      <div className="flex flex-row items-center content-center self-center justify-center gap-3 bg-gray-400 border border-red-500 p-3 w-80 h-24 rounded-lg cursor-help transition-all hover:brightness-90 group-hover:bg-red-500">
-        <div className="w-14 h-14 p-3 bg-gray-400 rounded-2xl">
-          <>{props.icon}</>
+      <a href={props.link} target="_blank">
+        <div className="flex flex-row items-center content-center self-center justify-center gap-3 bg-gray-400 border border-red-500 p-3 w-80 h-24 rounded-lg cursor-help transition-all hover:brightness-90 group-hover:bg-red-500">
+          <div className="w-14 h-14 p-3 bg-gray-400 rounded-2xl">
+            <>{props.icon}</>
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold group-hover:font-extrabold group-hover:text-gray-400">{props.title}</h3>
+          </div>
+          <div>
+            <p>{props.text}</p>
+          </div>
         </div>
-        <div>
-          <h3 className="text-lg font-semibold group-hover:font-extrabold group-hover:text-gray-400">{props.title}</h3>
-        </div>
-        <div>
-          <p>{props.text}</p>
-        </div>
-      </div>
+      </a>
     </motion.div>
   );
 }
