@@ -8,6 +8,7 @@ import DangerNet from "../assets/projects/project-dangernet.webp";
 import IntelliOn from "../assets/projects/project-intellion.webp";
 import Nordician2 from "../assets/projects/project-nordician2.webp";
 import Vibrance from "../assets/projects/project-vibrance.webp";
+import TV360Corporativa from "../assets/projects/project-360tvcorporativa.webp";
 
 export default function Projects() {
   return (
@@ -20,6 +21,15 @@ export default function Projects() {
         <SectionTitles title="Projetos" />
       </div>
       <div className="flex flex-col items-center justify-center gap-36 mt-24">
+        <ProjectBlockReverse
+          linkURL={"https://360tvcorporativa.com.br"}
+          imgURL={TV360Corporativa}
+          title={"360TV Corporativa"}
+          imgALT="Projeto 360TV Corporativa"
+          description={
+            "A Euro Factor é uma empresa de factoring fundada em 2013 com um objetivo claro: Ajudar seus clientes a impulsionar o crescimento de suas empresas."
+          }
+        />
         <ProjectBlock
           linkURL={"https://www.sonoconforto.com.br/"}
           imgURL={Sonoeconforto}
@@ -79,7 +89,6 @@ export default function Projects() {
             "Aqui você irá descobrir os mistérios e as verdades pro trás da grande internet."
           }
         />
-
       </div>
 
       <div className="flex items-end justify-end text-right my-10 mt-16 mbl:items-center mbl:justify-center">

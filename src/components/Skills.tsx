@@ -11,6 +11,7 @@ import TsIcon from "../assets/icons/TsIcon";
 import FigmaIcon from "../assets/icons/FigmaIcon";
 import { Monitor } from "phosphor-react";
 import PythonIcon from "../assets/icons/PythonIcon";
+import PowerBIIcon from "../assets/icons/PowerBIIcon";
 
 export default function Skills() {
   return (
@@ -38,6 +39,7 @@ export default function Skills() {
           link="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
         />
       </div>
+
       <div className="flex flex-row gap-5 mbl:flex-col">
         <SkillBox
           title={"TypeScript"}
@@ -55,11 +57,12 @@ export default function Skills() {
           link="https://v2.tailwindcss.com/"
         />
       </div>
+
       <div className="flex flex-row gap-5 mbl:flex-col">
         <SkillBox
-          title={"WordPress"}
-          icon={<WpIcon />}
-          link="https://wordpress.org/"
+          title={"Python"}
+          icon={<PythonIcon />}
+          link="https://www.python.org/"
         />
         <SkillBox
           title={"Figma"}
@@ -69,14 +72,20 @@ export default function Skills() {
         <SkillBox
           title={"UI/UX"}
           icon={<Monitor className="w-8 h-8 text-red-500" />}
-          link="#"
+          link=" "
         />
       </div>
+
       <div className="flex flex-row gap-5 mbl:flex-col">
         <SkillBox
-          title={"Python"}
-          icon={<PythonIcon />}
-          link="https://www.python.org/"
+          title={"WordPress"}
+          icon={<WpIcon />}
+          link="https://wordpress.org/"
+        />
+        <SkillBox
+          title={"Power BI"}
+          icon={<PowerBIIcon />}
+          link="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi-vJ6W_YaHAxXPpZUCHTmxAeEQFnoECBwQAQ&url=https%3A%2F%2Fwww.microsoft.com%2Fpt-br%2Fpower-platform%2Fproducts%2Fpower-bi&usg=AOvVaw0W759u98QX126Vrklq114l&opi=89978449"
         />
       </div>
     </section>

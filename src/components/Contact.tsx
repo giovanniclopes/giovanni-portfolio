@@ -7,7 +7,7 @@ export default function Contact() {
       aria-labelledby="contact-section-heading"
       className="flex justify-center p-7 w-full mb-10"
     >
-      <div className="max-w-3xl w-full">
+      <div className="max-w-4xl w-full mbl:max-w-3xl">
         <div className="flex items-center justify-center my-5 mb-12">
           <SectionTitles title="Contato" />
         </div>

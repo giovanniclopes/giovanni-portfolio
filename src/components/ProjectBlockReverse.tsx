@@ -47,7 +47,7 @@ export default function ProjectBlockReverse(props: ProjectBlockReverse) {
                 </span>
                 <h3 className="text-3xl font-bold">{props.title}</h3>
               </div>
-              <p className="w-4/6 text-lg text-end mbl:w-full mbl:text-centerr">
+              <p className="w-4/6 text-lg text-end mbl:w-full mbl:text-center">
                 "{props.description}"
               </p>
             </div>
