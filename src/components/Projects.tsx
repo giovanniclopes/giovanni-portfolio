@@ -9,6 +9,7 @@ import IntelliOn from "../assets/projects/project-intellion.webp";
 import Nordician2 from "../assets/projects/project-nordician2.webp";
 import Vibrance from "../assets/projects/project-vibrance.webp";
 import TV360Corporativa from "../assets/projects/project-360tvcorporativa.webp";
+import Turisthermas from "../assets/projects/project-turisthermas.webp";
 
 export default function Projects() {
   return (
@@ -21,6 +22,15 @@ export default function Projects() {
         <SectionTitles title="Projetos" />
       </div>
       <div className="flex flex-col items-center justify-center gap-36 mt-24">
+        <ProjectBlock
+          linkURL={"https://turisthermas.com.br/blog/"}
+          imgURL={Turisthermas}
+          title={"Blog TurisThermas"}
+          imgALT="Projeto TurisThermas"
+          description={
+            "A TurisThermas é mais do que uma operadora de turismo. Nossa missão é elevar Olímpia ao status de um dos principais destinos turísticos do Brasil."
+          }
+        />
         <ProjectBlockReverse
           linkURL={"https://360tvcorporativa.com.br"}
           imgURL={TV360Corporativa}
