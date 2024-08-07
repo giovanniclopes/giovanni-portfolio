@@ -37,7 +37,7 @@ export default function Projects() {
           title={"360TV Corporativa"}
           imgALT="Projeto 360TV Corporativa"
           description={
-            "A Euro Factor é uma empresa de factoring fundada em 2013 com um objetivo claro: Ajudar seus clientes a impulsionar o crescimento de suas empresas."
+            "A 360 TV Corporativa representa uma revolução no universo do streaming e mídia indoor, oferecendo soluções inovadoras que potencializam o marketing digital de sua empresa."
           }
         />
         <ProjectBlock
